@@ -59,3 +59,17 @@ typings/
 
 # next.js build output
 .next
+vue-news/target/dependency/PaymentAPILibrary.jar
+vue-news/lib/EFTPayments.dll
+vue-news/lib/EFTPayments.pdb
+vue-news/lib/EFTPayments.tlb
+vue-news/lib/System.Data.SQLite.dll
+vue-news/package-lock.json
+vue-news/edgetest.js
+vue-news/EFTPayments.dll
+vue-news/PaymentAPILibrary.jar
+vue-news/alipay.js
+vue-news/alipay_app.png
+vue-news/config.properties
+vue-news/sample.js
+vue-news/package-lock.json
