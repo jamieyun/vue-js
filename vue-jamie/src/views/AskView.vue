@@ -1,6 +1,18 @@
 <template>
     <div>
-        <div v-for="item in fetchedAsk">{{item.user}}</div>
+        <p v-for="item in fetchedAsk">
+            <!-- <a :href="item.url">
+                {{item.title}}
+            </a> -->
+            <router-link
+            :to="`/item/${item.id}`"
+            >
+            {{ item.title }}
+            </router-link>
+            <small>
+                {{item.time_ago}} by {{item.user}}
+            </small>
+        </p>
         <!-- <div v-for="item in jobs">{{item.id}}</div> -->
     </div>
 </template>
@@ -40,7 +52,7 @@ export default {
     },
     created:function() {// = created(){}
         this.$store.dispatch('FETCH_ASK');
-        this.$store.dispatch('FETCH_JOBS');
+        // this.$store.dispatch('FETCH_JOBS');
         // fetchAskList()
         //     .then(res => this.asks = res.data)
         //     .catch(err => console.log(err))
